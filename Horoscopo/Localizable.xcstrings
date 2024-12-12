@@ -1,0 +1,270 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "April 20 to May 20" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "20 de Abril hasta el 20 de Mayo"
+          }
+        }
+      }
+    },
+    "Aquarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aquario"
+          }
+        }
+      }
+    },
+    "Aries" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aries"
+          }
+        }
+      }
+    },
+    "August 23 to September 22" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "23 de Agosto hasta el 22 de Septiembre"
+          }
+        }
+      }
+    },
+    "Cancer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancer"
+          }
+        }
+      }
+    },
+    "Capricorn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capricornio"
+          }
+        }
+      }
+    },
+    "December 22 to January 19" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "22 de Diciembre hasta el 18 de Enero"
+          }
+        }
+      }
+    },
+    "February 19 to March 20" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "19 de Febrero hasta el 20 de Marzo"
+          }
+        }
+      }
+    },
+    "Geminis" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geminis"
+          }
+        }
+      }
+    },
+    "January 20 to February 18" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "20 de Enero hasta el 18 de Febrero"
+          }
+        }
+      }
+    },
+    "July 23 to August 22" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "23 de Julio hasta el 22 de Agosto"
+          }
+        }
+      }
+    },
+    "June 21 to July 22" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "21 de Junio hasta el 22 de Julio"
+          }
+        }
+      }
+    },
+    "Leo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leo"
+          }
+        }
+      }
+    },
+    "Libra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libra"
+          }
+        }
+      }
+    },
+    "March 21 to April 19" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "21 de Marzo hasta el 19 de Abril"
+          }
+        }
+      }
+    },
+    "May 21 to June 20" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "21 de Mayo hasta el 20 de Junio"
+          }
+        }
+      }
+    },
+    "November 22 to December 21" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "22 de Noviembre hasta el 21 de Diciembre"
+          }
+        }
+      }
+    },
+    "October 23 to November 21" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "23 de Octubre hasta el 21 de Noviembre"
+          }
+        }
+      }
+    },
+    "Pisces" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Piscis"
+          }
+        }
+      }
+    },
+    "Sagitarius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sagitario"
+          }
+        }
+      }
+    },
+    "Scorpio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escorpio"
+          }
+        }
+      }
+    },
+    "September 23 to October 22" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "23 de Septiembre hasta el 22 de Octubre"
+          }
+        }
+      }
+    },
+    "Taurus" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tauro"
+          }
+        }
+      }
+    },
+    "Virgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Virgo"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

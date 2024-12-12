@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		B2D479B22D0B5575005F82CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D479B12D0B5575005F82CD /* AppDelegate.swift */; };
 		B2D479B42D0B5575005F82CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D479B32D0B5575005F82CD /* SceneDelegate.swift */; };
-		B2D479B62D0B5575005F82CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D479B52D0B5575005F82CD /* ViewController.swift */; };
+		B2D479B62D0B5575005F82CD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D479B52D0B5575005F82CD /* MainViewController.swift */; };
 		B2D479B92D0B5575005F82CD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B2D479B82D0B5575005F82CD /* Base */; };
 		B2D479BB2D0B5576005F82CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D479BA2D0B5576005F82CD /* Assets.xcassets */; };
 		B2D479BE2D0B5576005F82CD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B2D479BD2D0B5576005F82CD /* Base */; };
+		B2D479C62D0B57EB005F82CD /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D479C52D0B57EB005F82CD /* Horoscope.swift */; };
+		B2D479C82D0B5CA8005F82CD /* HoroscopeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D479C72D0B5CA8005F82CD /* HoroscopeViewCell.swift */; };
+		B2D479CA2D0B6D44005F82CD /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B2D479C92D0B6D44005F82CD /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B2D479AE2D0B5575005F82CD /* Horoscopo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Horoscopo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D479B12D0B5575005F82CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2D479B32D0B5575005F82CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B2D479B52D0B5575005F82CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2D479B52D0B5575005F82CD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B2D479B82D0B5575005F82CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2D479BA2D0B5576005F82CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2D479BD2D0B5576005F82CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2D479BF2D0B5576005F82CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D479C52D0B57EB005F82CD /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
+		B2D479C72D0B5CA8005F82CD /* HoroscopeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeViewCell.swift; sourceTree = "<group>"; };
+		B2D479C92D0B6D44005F82CD /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				B2D479B12D0B5575005F82CD /* AppDelegate.swift */,
 				B2D479B32D0B5575005F82CD /* SceneDelegate.swift */,
-				B2D479B52D0B5575005F82CD /* ViewController.swift */,
+				B2D479B52D0B5575005F82CD /* MainViewController.swift */,
 				B2D479B72D0B5575005F82CD /* Main.storyboard */,
 				B2D479BA2D0B5576005F82CD /* Assets.xcassets */,
 				B2D479BC2D0B5576005F82CD /* LaunchScreen.storyboard */,
 				B2D479BF2D0B5576005F82CD /* Info.plist */,
+				B2D479C52D0B57EB005F82CD /* Horoscope.swift */,
+				B2D479C72D0B5CA8005F82CD /* HoroscopeViewCell.swift */,
+				B2D479C92D0B6D44005F82CD /* Localizable.xcstrings */,
 			);
 			path = Horoscopo;
 			sourceTree = "<group>";
@@ -109,6 +118,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = B2D479A52D0B5575005F82CD;
 			productRefGroup = B2D479AF2D0B5575005F82CD /* Products */;
@@ -127,6 +137,7 @@
 			files = (
 				B2D479BB2D0B5576005F82CD /* Assets.xcassets in Resources */,
 				B2D479BE2D0B5576005F82CD /* Base in Resources */,
+				B2D479CA2D0B6D44005F82CD /* Localizable.xcstrings in Resources */,
 				B2D479B92D0B5575005F82CD /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2D479B62D0B5575005F82CD /* ViewController.swift in Sources */,
+				B2D479C82D0B5CA8005F82CD /* HoroscopeViewCell.swift in Sources */,
+				B2D479C62D0B57EB005F82CD /* Horoscope.swift in Sources */,
+				B2D479B62D0B5575005F82CD /* MainViewController.swift in Sources */,
 				B2D479B22D0B5575005F82CD /* AppDelegate.swift in Sources */,
 				B2D479B42D0B5575005F82CD /* SceneDelegate.swift in Sources */,
 			);
