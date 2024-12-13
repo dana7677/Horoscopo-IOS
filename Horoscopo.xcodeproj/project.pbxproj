@@ -16,6 +16,7 @@
 		B2D479C62D0B57EB005F82CD /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D479C52D0B57EB005F82CD /* Horoscope.swift */; };
 		B2D479C82D0B5CA8005F82CD /* HoroscopeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D479C72D0B5CA8005F82CD /* HoroscopeViewCell.swift */; };
 		B2D479CA2D0B6D44005F82CD /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B2D479C92D0B6D44005F82CD /* Localizable.xcstrings */; };
+		B2FC679B2D0C921B00205449 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC679A2D0C921B00205449 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B2D479C52D0B57EB005F82CD /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
 		B2D479C72D0B5CA8005F82CD /* HoroscopeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeViewCell.swift; sourceTree = "<group>"; };
 		B2D479C92D0B6D44005F82CD /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		B2FC679A2D0C921B00205449 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				B2D479C52D0B57EB005F82CD /* Horoscope.swift */,
 				B2D479C72D0B5CA8005F82CD /* HoroscopeViewCell.swift */,
 				B2D479C92D0B6D44005F82CD /* Localizable.xcstrings */,
+				B2FC679A2D0C921B00205449 /* SecondViewController.swift */,
 			);
 			path = Horoscopo;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FC679B2D0C921B00205449 /* SecondViewController.swift in Sources */,
 				B2D479C82D0B5CA8005F82CD /* HoroscopeViewCell.swift in Sources */,
 				B2D479C62D0B57EB005F82CD /* Horoscope.swift in Sources */,
 				B2D479B62D0B5575005F82CD /* MainViewController.swift in Sources */,

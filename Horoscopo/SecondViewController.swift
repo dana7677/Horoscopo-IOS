@@ -5,25 +5,39 @@
 //  Created by Tardes on 13/12/24.
 //
 
+import SwiftUI
 import UIKit
+import Translation
 
 class SecondViewController: UIViewController {
+    
+    var horoscope: Horoscope? = nil
 
+    @IBOutlet weak var txtDates: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var HoroscopeOfDaydescript: UILabel!
     override func viewDidLoad() {
+        
+        navigationItem.title = horoscope?.name
+        imageView.image = horoscope?.icon
+        txtDates.text = horoscope?.dates
+        
+        getHoroscopeLuck()
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    func getHoroscopeLuck() {
+            Task {
+                do {
+                    let luck = try await Horoscope.getHoroscopeLuck(horoscopeId: horoscope!.id)
+                    
+                    HoroscopeOfDaydescript.text = luck
+                    
+                } catch {
+                    print(error)
+                }
+            }
+        }
 
 }

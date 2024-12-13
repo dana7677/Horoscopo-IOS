@@ -19,6 +19,10 @@ class HoroscopeViewCell: UITableViewCell {
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
+        
+        //let controller= storyboard?.instantiateViewController(withIdentifier: "DetailsHoroscopeView") as
+        
+        
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
