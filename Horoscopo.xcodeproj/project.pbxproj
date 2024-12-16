@@ -45,6 +45,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2D159AA2D10AACF00609A18 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B2D159AB2D10AB1200609A18 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2D479B52D0B5575005F82CD /* MainViewController.swift */,
+				B2FC679A2D0C921B00205449 /* SecondViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B2D159AC2D10AB1E00609A18 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2D479B72D0B5575005F82CD /* Main.storyboard */,
+				B2D479BC2D0B5576005F82CD /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2D159AD2D10AB4700609A18 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B2D479C52D0B57EB005F82CD /* Horoscope.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B2D159AE2D10AB8100609A18 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B2D479C72D0B5CA8005F82CD /* HoroscopeViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		B2D479A52D0B5575005F82CD = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +105,16 @@
 		B2D479B02D0B5575005F82CD /* Horoscopo */ = {
 			isa = PBXGroup;
 			children = (
+				B2D159AC2D10AB1E00609A18 /* Views */,
+				B2D159AE2D10AB8100609A18 /* TableViewCells */,
+				B2D159AD2D10AB4700609A18 /* Entities */,
+				B2D159AB2D10AB1200609A18 /* ViewControllers */,
+				B2D159AA2D10AACF00609A18 /* Utils */,
 				B2D479B12D0B5575005F82CD /* AppDelegate.swift */,
 				B2D479B32D0B5575005F82CD /* SceneDelegate.swift */,
-				B2D479B52D0B5575005F82CD /* MainViewController.swift */,
-				B2D479B72D0B5575005F82CD /* Main.storyboard */,
 				B2D479BA2D0B5576005F82CD /* Assets.xcassets */,
-				B2D479BC2D0B5576005F82CD /* LaunchScreen.storyboard */,
 				B2D479BF2D0B5576005F82CD /* Info.plist */,
-				B2D479C52D0B57EB005F82CD /* Horoscope.swift */,
-				B2D479C72D0B5CA8005F82CD /* HoroscopeViewCell.swift */,
 				B2D479C92D0B6D44005F82CD /* Localizable.xcstrings */,
-				B2FC679A2D0C921B00205449 /* SecondViewController.swift */,
 			);
 			path = Horoscopo;
 			sourceTree = "<group>";

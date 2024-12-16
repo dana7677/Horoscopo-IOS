@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+enum TypeSearch {
+    case daily, weekly, monthly
+}
+
 struct Horoscope{
     
     let id:String
@@ -15,6 +19,8 @@ struct Horoscope{
     let icon:UIImage
     let dates:String
     
+
+
     static func getAll()->[Horoscope]
     {
         
@@ -36,7 +42,7 @@ struct Horoscope{
         return list
     }
     
-    static func getFiltered(_ searchText:String)->[Horoscope]
+    static func getFiltered(_ searchText: String)->[Horoscope]
     {
         var filteredDataString=[String]()
         var filteredDataCompleteString=[String]()
@@ -82,10 +88,12 @@ struct Horoscope{
     }
     
     //Funcion Call Api
-    static func getHoroscopeLuck(horoscopeId: String) async throws -> String {
+    static func getHoroscopeLuck(horoscopeId: String, search: TypeSearch) async throws -> String {
            var result: String
+            
+            let url = getUrlHoroscope(horoscopeId, search)
            
-           let url = URL(string: "https://horoscope-app-api.vercel.app/api/v1/get-horoscope/daily?sign=\(horoscopeId)&day=TODAY")
+           //let url = URL(string: "https://horoscope-app-api.vercel.app/api/v1/get-horoscope/daily?sign=\(horoscopeId)&day=TODAY")
            
             //Verify Url not false
            guard let url = url else {
@@ -105,6 +113,23 @@ struct Horoscope{
            
            return result
        }
+    
+    static func getUrlHoroscope(_ horoscopeId: String,_ search: TypeSearch)->URL?{
+        
+                var url = URL(string: "https://horoscope-app-api.vercel.app/api/v1/get-horoscope/daily?sign=\(horoscopeId)&day=TODAY")
+                switch search {
+                case .daily:
+                    url=URL(string: "https://horoscope-app-api.vercel.app/api/v1/get-horoscope/daily?sign=\(horoscopeId)&day=TODAY")
+                    return url
+                case .weekly:
+                    url=URL(string: "https://horoscope-app-api.vercel.app/api/v1/get-horoscope/weekly?sign=\(horoscopeId)&day=TODAY")
+                    return url
+                case .monthly:
+                    url=URL(string: "https://horoscope-app-api.vercel.app/api/v1/get-horoscope/monthly?sign=\(horoscopeId)&day=TODAY")
+                    return url
+                }
+            
+        }
     
     struct RuntimeError: Error {
             let description: String

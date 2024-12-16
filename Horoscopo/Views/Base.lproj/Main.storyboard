@@ -104,23 +104,48 @@
                                         <rect key="frame" x="76" y="0.0" width="240" height="223"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2m-vd-lbO">
-                                        <rect key="frame" x="8" y="239" width="377" height="54"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVO-o4-VH1">
+                                        <rect key="frame" x="8" y="290" width="377" height="381"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2m-vd-lbO">
+                                        <rect key="frame" x="8" y="231" width="377" height="51"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HoroscopeOfDay" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfW-I1-fa7">
-                                        <rect key="frame" x="8" y="309" width="377" height="398"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AxA-h1-oPt">
+                                <rect key="frame" x="0.0" y="774" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="dailyImg" width="50" id="Ezf-Cq-kzT">
+                                        <connections>
+                                            <action selector="getMyHoroscopeSearch:" destination="TDm-pw-jyI" id="n3P-wF-7ag"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="100" style="plain" systemItem="flexibleSpace" id="IBj-q3-CDb"/>
+                                    <barButtonItem tag="1" title="Item" image="weeklyImg" width="50" id="I2G-0C-pr1">
+                                        <connections>
+                                            <action selector="getMyHoroscopeSearch:" destination="TDm-pw-jyI" id="8t8-3h-uyA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="100" style="plain" systemItem="flexibleSpace" id="lvW-wF-imc"/>
+                                    <barButtonItem tag="2" title="Item" image="montlyImg" width="50" id="7cl-G2-UUd">
+                                        <connections>
+                                            <action selector="getMyHoroscopeSearch:" destination="TDm-pw-jyI" id="g1I-lC-pAn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E2o-Hc-DNa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -133,7 +158,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="sux-Wf-6Vv"/>
                     <connections>
-                        <outlet property="HoroscopeOfDaydescript" destination="NfW-I1-fa7" id="42X-KF-JnL"/>
+                        <outlet property="HoroscopeOfDaydescript" destination="bVO-o4-VH1" id="KAd-HM-ff5"/>
+                        <outlet property="btnDaily" destination="Ezf-Cq-kzT" id="1BT-6O-LJH"/>
+                        <outlet property="btnMonthly" destination="7cl-G2-UUd" id="I01-U9-vRh"/>
+                        <outlet property="btnWeekly" destination="I2G-0C-pr1" id="UIv-Ss-QEp"/>
                         <outlet property="imageView" destination="YDc-bR-5c6" id="nSw-5n-1V7"/>
                         <outlet property="txtDates" destination="Q2m-vd-lbO" id="JaI-cC-QGc"/>
                     </connections>
@@ -162,6 +190,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dailyImg" width="800" height="800"/>
+        <image name="montlyImg" width="800" height="800"/>
+        <image name="weeklyImg" width="800" height="800"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
